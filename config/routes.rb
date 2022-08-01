@@ -12,4 +12,9 @@ end
   # Defines the root path route ("/")
 root "todo_lists#index"
   # root "articles#index"
+
+def show
+  @todo_lists = TodoList.find(params[:id])
+end
+
 end
